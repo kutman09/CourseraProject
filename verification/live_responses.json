@@ -1,0 +1,196 @@
+[
+  {
+    "request": "POST /auth/register/",
+    "status": 201,
+    "response": {
+      "id": 6,
+      "full_name": "Live verification",
+      "email": "live_d7f372c3b0@test.kg",
+      "role": "student",
+      "user_status": "free",
+      "is_active": true
+    }
+  },
+  {
+    "request": "POST /auth/login/",
+    "status": 200,
+    "response": {
+      "access_token": "<hidden>",
+      "token_type": "bearer"
+    }
+  },
+  {
+    "request": "POST /auth/login/",
+    "status": 200,
+    "response": {
+      "access_token": "<hidden>",
+      "token_type": "bearer"
+    }
+  },
+  {
+    "request": "GET /users/me/",
+    "status": 200,
+    "response": {
+      "id": 6,
+      "full_name": "Live verification",
+      "email": "live_d7f372c3b0@test.kg",
+      "role": "student",
+      "user_status": "free",
+      "is_active": true
+    }
+  },
+  {
+    "request": "POST /application/",
+    "status": 201,
+    "response": {
+      "course_id": 2,
+      "comment": "Живая проверка",
+      "id": 1,
+      "student_id": 6,
+      "manager_id": null,
+      "status": "new"
+    }
+  },
+  {
+    "request": "PUT /application/1/",
+    "status": 200,
+    "response": {
+      "course_id": 2,
+      "comment": "Кабыл алынды",
+      "id": 1,
+      "student_id": 6,
+      "manager_id": 3,
+      "status": "accepted"
+    }
+  },
+  {
+    "request": "POST /enrollment/",
+    "status": 201,
+    "response": {
+      "group_id": 1,
+      "id": 1,
+      "student_id": 6,
+      "status": "active"
+    }
+  },
+  {
+    "request": "GET /enrollment/1/",
+    "status": 200,
+    "response": {
+      "group_id": 1,
+      "id": 1,
+      "student_id": 6,
+      "status": "active"
+    }
+  },
+  {
+    "request": "GET /application/",
+    "status": 403,
+    "response": {
+      "detail": "Уруксат жок"
+    }
+  },
+  {
+    "request": "GET /users/me/",
+    "status": 401,
+    "response": {
+      "detail": "Кирүү керек"
+    }
+  },
+  {
+    "request": "POST /ai/search/",
+    "status": 200,
+    "response": {
+      "answer": "Найдено курсов: 1",
+      "filters": {
+        "keyword": "Python",
+        "category_id": null,
+        "level": "intermediate",
+        "min_price": null,
+        "max_price": null,
+        "status": null
+      },
+      "courses": [
+        {
+          "title": "Python Data Science",
+          "category_id": 2,
+          "description": "Pandas, NumPy and machine learning basics",
+          "level": "intermediate",
+          "price": 7500.0,
+          "duration_weeks": 16,
+          "is_active": true,
+          "status": "free",
+          "id": 2,
+          "created_at": "2026-10-31T12:48:34.431810",
+          "updated_at": "2026-10-31T12:48:34.431810"
+        }
+      ]
+    }
+  },
+  {
+    "request": "POST /ai/answer/",
+    "status": 200,
+    "response": {
+      "text_draft": "Здравствуйте! Приносим извинения за неудобства. По нашим данным: Оплата прошла 3 дня назад. Мы передали обращение менеджеру, он проверит оплату и свяжется с вами в ближайшее время.",
+      "review": true
+    }
+  },
+  {
+    "request": "POST /ai/answer/",
+    "status": 200,
+    "response": {
+      "text_draft": "Здравствуйте! Спасибо за обращение. Мы передали обращение менеджеру, он свяжется с вами в ближайшее время.",
+      "review": true
+    }
+  },
+  {
+    "request": "POST /ai/analyze/",
+    "status": 200,
+    "response": {
+      "priority": 1,
+      "course_name": null,
+      "answer": "Здравствуйте! Сожалеем о проблеме со входом или паролем. Мы передали обращение менеджеру, он поможет разобраться и свяжется с вами."
+    }
+  },
+  {
+    "request": "GET /docs",
+    "status": 200,
+    "response": {
+      "html": true
+    }
+  },
+  {
+    "request": "POST /auth/token/",
+    "status": 200,
+    "response": {
+      "access_token": "<hidden>",
+      "token_type": "bearer"
+    }
+  },
+  {
+    "request": "GET /admin (redirects followed)",
+    "status": 200,
+    "final_url": "http://127.0.0.1:8001/admin/login"
+  },
+  {
+    "request": "Admin login as student",
+    "rejected": true
+  },
+  {
+    "request": "Admin login as admin",
+    "status": 200,
+    "final_url": "http://127.0.0.1:8001/admin/"
+  },
+  {
+    "request": "GET /admin/user/list",
+    "status": 200,
+    "password_hashes_visible": false
+  },
+  {
+    "request": "DELETE /enrollment/1/",
+    "status": 200,
+    "response": {
+      "message": "Маалымат өчүрүлдү"
+    }
+  }
+]

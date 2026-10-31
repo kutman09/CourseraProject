@@ -1,0 +1,16 @@
+fastapi==0.115.14
+uvicorn[standard]==0.54.0
+sqlalchemy==2.0.55
+pydantic[email]==2.14.2
+pydantic-settings==2.16.2
+python-dotenv==1.2.4
+python-multipart==0.0.32
+sqladmin==0.20.1
+PyJWT==2.15.1
+bcrypt==5.0.0
+httpx==0.28.1
+pytest==9.2.0
+itsdangerous==2.2.0
+# Session signing for sqladmin; AnyIO pin keeps TestClient free of deprecated aliases.
+anyio==4.9.0
+# Optional LLM provider: langchain[openai]

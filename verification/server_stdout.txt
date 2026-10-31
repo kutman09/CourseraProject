@@ -1,0 +1,52 @@
+INFO:     127.0.0.1:52467 - "POST /auth/register/ HTTP/1.1" 201 Created
+INFO:     127.0.0.1:52468 - "POST /auth/login/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52469 - "POST /auth/login/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52470 - "GET /users/me/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52471 - "POST /application/ HTTP/1.1" 201 Created
+INFO:     127.0.0.1:52472 - "PUT /application/1/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52473 - "POST /enrollment/ HTTP/1.1" 201 Created
+INFO:     127.0.0.1:52474 - "GET /enrollment/1/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52475 - "GET /application/ HTTP/1.1" 403 Forbidden
+INFO:     127.0.0.1:52476 - "GET /users/me/ HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:52477 - "POST /ai/search/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52478 - "POST /ai/answer/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52479 - "POST /ai/answer/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52480 - "POST /ai/analyze/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52481 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52482 - "POST /auth/token/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52483 - "GET /admin HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:52483 - "GET /admin/ HTTP/1.1" 302 Found
+INFO:     127.0.0.1:52483 - "GET /admin/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52483 - "POST /admin/login HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:52483 - "POST /admin/login HTTP/1.1" 302 Found
+INFO:     127.0.0.1:52483 - "GET /admin/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52483 - "GET /admin/user/list HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52484 - "DELETE /enrollment/1/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53009 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53672 - "GET / HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54417 - "GET / HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:64772 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64772 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56604 - "GET /admin HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:56604 - "GET /admin/ HTTP/1.1" 302 Found
+INFO:     127.0.0.1:56604 - "GET /admin/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56604 - "GET /admin/statics/css/tabler.min.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63684 - "GET /admin/statics/css/tabler-icons.min.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49760 - "GET /admin/statics/css/fontawesome.min.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50757 - "GET /admin/statics/css/select2.min.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58816 - "GET /admin/statics/css/flatpickr.min.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56219 - "GET /admin/statics/css/main.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58816 - "GET /admin/statics/js/jquery.min.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49760 - "GET /admin/statics/js/bootstrap.min.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50757 - "GET /admin/statics/js/tabler.min.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56219 - "GET /admin/statics/js/popper.min.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63684 - "GET /admin/statics/js/select2.full.min.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56604 - "GET /admin/statics/js/flatpickr.min.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49760 - "GET /admin/statics/js/main.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49760 - "POST /admin/login HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:54144 - "POST /ai/search/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54145 - "POST /ai/search/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54153 - "POST /ai/answer/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54158 - "POST /ai/answer/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63292 - "POST /ai/analyze/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63295 - "POST /ai/analyze/ HTTP/1.1" 200 OK
